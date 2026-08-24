@@ -1,0 +1,10 @@
+{
+  "source": "eurostat",
+  "dataset": "nrg_cb_em",
+  "status": "COMPARED",
+  "previous_snapshot_id": "27196ba8-52ff-4a67-95c9-5387e6a114c9",
+  "current_snapshot_id": "fafc2c80-a88f-4253-bf31-d6db5e69ac69",
+  "added": 0,
+  "removed": 0,
+  "modified": 0
+}

@@ -1,0 +1,7 @@
+field,definition,unit,role
+target,Eurostat electricity available to internal market,GWh,estimand
+lag3,Target value three months earlier,GWh,feature
+lag12,Target value twelve months earlier,GWh,feature/baseline
+hdd_partial,Heating degree days accumulated through cutoff,degree-days,feature
+cdd_partial,Cooling degree days accumulated through cutoff,degree-days,feature
+hicp,Consumer electricity price index,2025=100,context only

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "probabilistic-energy-data-observatory"
+version = "0.1.0"
+description = "Pseudo-real-time nowcasting of monthly electricity availability in France and Germany."
+requires-python = ">=3.11"
+dependencies = [
+  "numpy==2.5.2",
+  "pandas==3.0.5",
+  "plotly==6.9.0",
+  "requests==2.34.2",
+  "scikit-learn==1.9.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1"]
+
+[project.scripts]
+energy-observatory = "energy_observatory.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+

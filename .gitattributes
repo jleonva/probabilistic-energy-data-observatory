@@ -1,0 +1,2 @@
+* whitespace=blank-at-eol,-blank-at-eof
+docs/index.html -whitespace

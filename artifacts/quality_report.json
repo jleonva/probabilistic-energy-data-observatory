@@ -1,0 +1,124 @@
+{
+  "checks": [
+    {
+      "check_id": "DQ-01",
+      "check_name": "Schema and code validity",
+      "status": "PASS",
+      "severity": "ERROR",
+      "affected_rows": 0,
+      "evidence": {
+        "dimensions": [
+          "freq",
+          "nrg_bal",
+          "siec",
+          "unit",
+          "geo",
+          "time"
+        ],
+        "observed_geos": [
+          "DE",
+          "FR"
+        ],
+        "expected": {
+          "freq": "M",
+          "unit": "GWH",
+          "nrg_bal": "AIM",
+          "siec": "E7000"
+        }
+      }
+    },
+    {
+      "check_id": "DQ-02",
+      "check_name": "Primary-key uniqueness",
+      "status": "PASS",
+      "severity": "ERROR",
+      "affected_rows": 0,
+      "evidence": {
+        "key": [
+          "geo",
+          "time",
+          "nrg_bal",
+          "siec",
+          "unit"
+        ]
+      }
+    },
+    {
+      "check_id": "DQ-03",
+      "check_name": "Temporal continuity and coverage",
+      "status": "PASS",
+      "severity": "WARNING",
+      "affected_rows": 0,
+      "evidence": {
+        "missing_periods": {
+          "DE": [],
+          "FR": []
+        },
+        "coverage": {
+          "DE": {
+            "first": "2008-01",
+            "last": "2026-05",
+            "rows": 221
+          },
+          "FR": {
+            "first": "2008-01",
+            "last": "2026-04",
+            "rows": 220
+          }
+        }
+      }
+    },
+    {
+      "check_id": "DQ-04",
+      "check_name": "Missing values and observation flags",
+      "status": "PASS",
+      "severity": "ERROR",
+      "affected_rows": 0,
+      "evidence": {
+        "missing_values": 0,
+        "flagged_observations": 0,
+        "flags": []
+      }
+    },
+    {
+      "check_id": "DQ-05",
+      "check_name": "Units, signs and plausible ranges",
+      "status": "PASS",
+      "severity": "WARNING",
+      "affected_rows": 0,
+      "evidence": {
+        "negative_values": 0,
+        "zero_values": 0,
+        "month_over_month_changes_above_50_percent": 0,
+        "note": "Extreme changes are review candidates, not automatic errors."
+      }
+    },
+    {
+      "check_id": "DQ-06",
+      "check_name": "Cross-source alignment and freshness",
+      "status": "WARN",
+      "severity": "WARNING",
+      "affected_rows": 1,
+      "evidence": {
+        "weather_geos": [
+          "DE",
+          "FR"
+        ],
+        "hicp_geos": [
+          "DE",
+          "FR"
+        ],
+        "latest_weather_date": {
+          "DE": "2026-08-19",
+          "FR": "2026-08-19"
+        },
+        "latest_target_period_by_geo": {
+          "DE": "2026-05",
+          "FR": "2026-04"
+        },
+        "latest_hicp_period": "2026-07",
+        "cutoff_day": 20
+      }
+    }
+  ]
+}

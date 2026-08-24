@@ -1,0 +1,45 @@
+[project]
+title = "Probabilistic Energy Data Observatory"
+random_seed = 42
+start_date = "2008-01-01"
+cutoff_day = 20
+release_lag_months = 3
+temperature_base_c = 18.0
+prediction_interval_coverage = 0.80
+minimum_months_per_country = 60
+minimum_evaluation_origins_per_country = 12
+
+[paths]
+database = "data/observatory.sqlite"
+snapshots = "data/snapshots"
+artifacts = "artifacts"
+docs = "docs"
+
+[eurostat.electricity]
+dataset = "nrg_cb_em"
+freq = "M"
+nrg_bal = "AIM"
+siec = "E7000"
+unit = "GWH"
+geos = ["FR", "DE"]
+
+[eurostat.hicp]
+dataset = "prc_hicp_minr"
+freq = "M"
+unit = "I25"
+coicop_dimension = "coicop18"
+coicop = "CP0451"
+geos = ["FR", "DE"]
+
+[weather.FR]
+label = "Paris weather proxy"
+latitude = 48.8566
+longitude = 2.3522
+timezone = "Europe/Paris"
+
+[weather.DE]
+label = "Berlin weather proxy"
+latitude = 52.5200
+longitude = 13.4050
+timezone = "Europe/Berlin"
+

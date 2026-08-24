@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+data/observatory.sqlite
+data/observatory.sqlite-*
+artifacts/*.tmp
+

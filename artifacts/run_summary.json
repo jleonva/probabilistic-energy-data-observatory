@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE",
+  "generated_at_utc": "2026-08-24T17:01:22+00:00",
+  "python": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "config_path": "C:\\Users\\jaleo\\Documents\\Codex\\probabilistic-energy-data-observatory\\config\\project.toml",
+  "config_sha256": "e68d2e361eb45df201baf3391137cc4456e3e96352136d239d6291434cba5c69",
+  "git_branch": "codex/mvp",
+  "git_commit": "3810fc34927336f4cf81c0d09712ffa11eaa205d",
+  "packages": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "plotly": "6.9.0",
+    "requests": "2.34.2",
+    "scikit-learn": "1.9.0"
+  },
+  "target_rows": 441,
+  "hicp_rows": 734,
+  "weather_rows": 13612,
+  "prediction_rows": 292,
+  "current_nowcast_rows": 2,
+  "requested_current_period": "2026-08",
+  "joint_nowcast_period": "2026-07",
+  "revision_status": "COMPARED",
+  "h1_status": "NOT_TESTED",
+  "h2_status": "NOT_SUPPORTED",
+  "published": false,
+  "pushed": false
+}

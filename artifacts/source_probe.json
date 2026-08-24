@@ -1,0 +1,83 @@
+{
+  "generated_at_utc": "2026-08-24T17:01:20+00:00",
+  "electricity": {
+    "dataset": "nrg_cb_em",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_cb_em?lang=en&freq=M&nrg_bal=AIM&siec=E7000&unit=GWH&geo=FR&geo=DE",
+    "label": "Supply, transformation and consumption of electricity - monthly data",
+    "updated": "2026-08-20T23:00:00+0200",
+    "dimensions": [
+      "freq",
+      "nrg_bal",
+      "siec",
+      "unit",
+      "geo",
+      "time"
+    ],
+    "sizes": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      222
+    ],
+    "verified_labels": {
+      "nrg_bal": "Available to internal market",
+      "siec": "Electricity",
+      "unit": "Gigawatt-hour"
+    },
+    "first_period": "2008-01",
+    "last_period": "2026-05",
+    "coverage_by_geo": {
+      "DE": {
+        "first": "2008-01",
+        "last": "2026-05",
+        "rows": 221
+      },
+      "FR": {
+        "first": "2008-01",
+        "last": "2026-04",
+        "rows": 220
+      }
+    },
+    "rows": 441
+  },
+  "hicp": {
+    "dataset": "prc_hicp_minr",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?lang=en&freq=M&unit=I25&coicop18=CP0451&geo=FR&geo=DE",
+    "label": "Harmonised index of consumer prices (HICP) - ECOICOP ver.2 - indices and rates of change, monthly data",
+    "updated": "2026-08-19T11:00:00+0200",
+    "dimensions": [
+      "freq",
+      "unit",
+      "coicop18",
+      "geo",
+      "time"
+    ],
+    "sizes": [
+      1,
+      1,
+      1,
+      2,
+      367
+    ],
+    "verified_label": "Electricity (ND)",
+    "first_period": "1996-01",
+    "last_period": "2026-07",
+    "rows": 734
+  },
+  "weather": {
+    "source": "Open-Meteo Historical Weather API",
+    "start_date": "2008-01-01",
+    "requested_end_date": "2026-08-19",
+    "rows": 13612,
+    "latest_by_geo": {
+      "DE": "2026-08-19",
+      "FR": "2026-08-19"
+    },
+    "urls": [
+      "https://archive-api.open-meteo.com/v1/archive?latitude=48.8566&longitude=2.3522&start_date=2008-01-01&end_date=2026-08-19&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max&timezone=Europe%2FParis",
+      "https://archive-api.open-meteo.com/v1/archive?latitude=52.52&longitude=13.405&start_date=2008-01-01&end_date=2026-08-19&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max&timezone=Europe%2FBerlin"
+    ]
+  }
+}

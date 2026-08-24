@@ -1,0 +1,20 @@
+[
+  {
+    "hypothesis_id": "H1",
+    "status": "NOT_TESTED",
+    "claim": "A release-safe electricity HICP feature may improve electricity-availability nowcasting.",
+    "reason": "Historical HICP release vintages were not reconstructed; HICP is context only."
+  },
+  {
+    "hypothesis_id": "H2",
+    "status": "NOT_SUPPORTED",
+    "claim": "A simple weather-adjusted model improves pseudo-real-time monthly nowcasts relative to a seasonal-naive baseline.",
+    "primary_metric": "aggregate MAE",
+    "aggregate_improved": false,
+    "country_mae_not_worse": {
+      "DE": false,
+      "FR": true
+    },
+    "note": "Descriptive rolling-origin evidence; no statistical significance claim."
+  }
+]
