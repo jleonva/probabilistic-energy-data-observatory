@@ -2,6 +2,14 @@
 
 An evidence-first MVP for **pseudo-real-time nowcasting** of Eurostat monthly electricity availability in France and Germany.
 
+## See the result
+
+**[Open the interactive dashboard](https://jleonva.github.io/probabilistic-energy-data-observatory/)** · [Read the technical report](docs/technical_report.md)
+
+[![Dashboard preview showing the recorded nowcasts and electricity availability charts](docs/dashboard-preview.png)](https://jleonva.github.io/probabilistic-energy-data-observatory/)
+
+The dashboard is a self-contained snapshot of the recorded run; its figures are not live forecasts.
+
 ## What it estimates
 
 The target is Eurostat **electricity available to the internal market** (`nrg_cb_em`, `E7000`, `AIM`, `GWH`). It is not labelled as demand, load or wholesale price. Verified coverage: **Germany 2008-01–2026-05 (221 observations), France 2008-01–2026-04 (220 observations)**.
