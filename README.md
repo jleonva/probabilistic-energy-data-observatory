@@ -59,4 +59,4 @@ Open `docs/index.html` directly in a browser. It is self-contained and makes no 
 - H1 (vintage-safe HICP as a model feature) is not tested.
 - First-run revision status cannot show historical changes.
 
-**Work completed locally on branch `codex/mvp`. NOT PUSHED / NOT PUBLISHED.**
+This repository publishes the documented MVP; results reflect the recorded run and its stated limitations.
